@@ -1,0 +1,131 @@
+.header {
+  margin: 0 2.5rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLeft,
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.headerLeft {
+  flex-grow: 1;
+}
+
+.headerRight {
+  justify-content: flex-end;
+}
+
+a > span {
+  margin: 0 30px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
+}
+
+a > span:hover {
+  color: rgb(58, 49, 49);
+}
+
+.header__icon {
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.user__avatar {
+  font-size: 2rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: rgb(58, 49, 49);
+  color: white;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative; /* Ensure the parent container is positioned */
+}
+
+.search-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: rgb(58, 49, 49);
+  color: white;
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(100% + 5px); /* Position suggestions below the search bar */
+  width: calc(100% - 20px); /* Adjust the width to match the search bar */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.suggestions {
+  position: absolute;
+  top: calc(100% + 5px);
+  width: calc(100% - 20px);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding-bottom: 10px;
+}
+
+.suggestion-item {
+  padding: 0.5rem;
+  cursor: pointer;
+  color: black; /* Change the text color to black */
+}
+
+.suggestion-item:hover {
+  background-color: #e9ecef;
+}
